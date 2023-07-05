@@ -57,7 +57,7 @@ app.post('/login', (req, res) => {
     res.redirect('/staff/dashboard');
     return;
   }
-  res.send('stupid man, type in the correct password');
+  res.send('Im sorry but you typed in the wrong email or password, kindle recheck and try again.lol');
 });
 
 app.get('/student/dashboard', isAuthenticated, (req, res) => {
